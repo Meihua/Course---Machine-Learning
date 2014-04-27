@@ -15,3 +15,4 @@ Programming exercises
 * Week 4: Multi-class Classification and Neural Networks
 * Week 5: Neural Network Learning
 * Week 6: Regularized Linear Regression and Bias/Variance
+* Week 7: Support Vector Machines
