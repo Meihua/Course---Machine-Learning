@@ -21,10 +21,20 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
+m = size(X,1);
+distance = zeros(m, K);
 
+for i = 1 : K
 
+	% repmat() => repeat the elements of centroids(i,:)
+	mu = repmat(centroids(i,:), m, 1);
 
+	% distance between examples and centroids
+	distance(:,i) = sum((X - mu).^2, 2);
+end
 
+% get the minimun index of centroids
+[v,idx] = min(distance, [], 2);
 
 
 % =============================================================

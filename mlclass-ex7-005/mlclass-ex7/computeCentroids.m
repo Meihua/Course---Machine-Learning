@@ -27,10 +27,15 @@ centroids = zeros(K, n);
 %
 
 
+idx = repmat(idx, 1, n);
 
+for i = 1 : K
 
+	count = sum(idx==i);
 
+	centroids(i,:) = sum(X .* (idx==i)) ./ count;
 
+end
 
 
 % =============================================================
