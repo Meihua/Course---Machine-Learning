@@ -16,3 +16,4 @@ Programming exercises
 * Week 5: Neural Network Learning
 * Week 6: Regularized Linear Regression and Bias/Variance
 * Week 7: Support Vector Machines
+* Week 8: K-Means Clustering and PCA
